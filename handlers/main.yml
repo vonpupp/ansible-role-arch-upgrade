@@ -1,0 +1,7 @@
+# roles/ansible-role-arch-upgrade/handlers/main.yml
+---
+
+- name: restart ansible-role-arch-upgrade
+  service:
+    name: ansible-role-arch-upgraded
+    state: restarted

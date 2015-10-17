@@ -1,0 +1,7 @@
+# roles/ansible-role-arch-upgrade/vars/main.yml
+---
+
+ansible-role-arch-upgrade_packages:
+  - ansible-role-arch-upgrade
+
+ansible-role-arch-upgrade_service: ansible-role-arch-upgraded

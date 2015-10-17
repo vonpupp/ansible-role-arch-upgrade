@@ -1,0 +1,16 @@
+# roles/ansible-role-arch-upgrade/tasks/main.yml
+---
+
+- name: Install packages
+  pacman:
+    name: "{{ item }}"
+    state: present
+  with_items: ansible-role-arch-upgrade_packages
+  tags: ansible-role-arch-upgrade
+
+- name: Ensure service is started
+  service:
+    name: "{{ ansible-role-arch-upgrade_service }}"
+    state: started
+    enabled: true
+  tags: ansible-role-arch-upgrade
