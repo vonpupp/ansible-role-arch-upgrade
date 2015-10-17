@@ -17,9 +17,9 @@ arch:
     - python2-pip
   script:
     - "sudo archey3"
-    - "reflector --verbose -l 20 --sort rate -p https"
+    - "reflector --verbose -l 20 --sort rate -p http"
 
-    - pip2 install ansible>=1.6.0
+    - pip2 install --user ansible>=1.6.0
 
     - echo localhost > inventory
 
