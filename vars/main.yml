@@ -1,2 +1,4 @@
 # roles/ansible-role-arch-upgrade/vars/main.yml
 ---
+
+ansible_python_interpreter: /usr/bin/python2

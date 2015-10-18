@@ -2,8 +2,5 @@
 - hosts: all
   sudo: true
 
-  vars:
-    - ansible_python_interpreter: /usr/bin/python2
-
   roles:
     - ansible-role-arch-upgrade

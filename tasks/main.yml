@@ -2,7 +2,11 @@
 ---
 
 # Run the equivalent of "pacman -Sy"
-- pacman: update_cache=yes
+#- pacman: update_cache=yes
 
 # Run the equivalent of "pacman -Su"
-- pacman: upgrade=yes
+#- pacman: update_cache=yes upgrade=yes
+
+# Raw command, the upgrade parameter is not yet available on ansible 1.9
+- name: update package database and upgrade
+  raw: pacman -Syu --noconfirm --quiet
